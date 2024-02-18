@@ -1,0 +1,148 @@
+.head{
+    display: flex;
+}
+.head > div{
+    margin: 5px 5px;
+}
+.head > div a{
+    text-decoration: none;
+}
+
+.filter > div .input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: #E0EFFF;
+    border-radius: 15px;
+    height: 60px;
+}
+
+.filter div > .icon {
+    margin-right: 6px;
+}
+.filter div > select, .filter div > input{
+    width: 60%;
+}
+.filter div > input[type=text]{
+    border: none;
+    border-bottom: 2px solid ;
+    background-color: #E0EFFF;
+    width: 60%;
+}
+.filter div > input[type=date]{
+    width: 30%;
+}
+
+.filter .input_datetime .input > div{
+    margin: 0px 5px;
+}
+
+.filter .button{
+    display: flex;
+    justify-content: center;
+    background-color: #ffff;
+}
+.filter .button > div{
+    background-color: #0078D4;
+    height: 35px;
+    width: 104px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.filter .button > div:hover{
+    cursor: pointer;
+}
+
+.results{
+    margin: 0px 10px;
+    background-color: #E0EFFF;
+    border-radius: 15px;
+    margin-top: 5px;
+    padding-bottom: 10px;
+}
+
+.results .showresults{
+    margin: 0px 5px;
+}
+.results .showresults .head , .details > div{
+    margin: 0px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.results .showresults .head .left{
+    display: flex;
+    align-items: baseline;
+}
+.results .showresults .head .left .month{
+    font-size: 36px;
+}
+.results .showresults .head .left .day{
+    font-size: 14px;
+}
+.results .showresults .head .right{
+    display: flex;
+    align-items: center;
+}
+.results .showresults .head .right .salary{
+    font-size: 24px;
+}
+
+.resultnotes{
+    height: 260px;
+    overflow-y: scroll;
+}
+
+.details{
+    margin-bottom: 10px;
+    height: 100%;
+}
+.details > div{
+    border: 1px solid;
+}
+.details .dateline{
+    background-color: #0078D4;
+    border-radius: 5px 5px 0px 0px;
+}
+.details .dateline > p{
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+.details .dataline > p{
+    font-size: 20px;
+}
+
+@media screen and (min-width: 801px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .head{
+        width: 60%;
+    }
+
+    .filter > div .input{
+        height: 40px;
+    }
+    .filter .button{
+        justify-content: flex-start;
+    }
+
+    .results{
+        width: 50%;
+    }
+    .filter{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}

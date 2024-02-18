@@ -1,0 +1,91 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    background-color: #E0EFFF;
+    border: 1px solid;
+}
+
+.menubar:hover, .signout_btn:hover, li:hover{
+    cursor: pointer;
+    background-color: #0078D4;
+}
+li:hover{
+    text-decoration: white underline;
+}
+
+.menubar{
+    background-color: #E0EFFF;
+    display: block;
+    width: 148px;
+    text-align: center;
+    position: relative;
+}
+.menuActive {
+    background-color: #0078D4;
+    color: white;
+    border: 1px black solid;
+}
+.navlist{
+    display: none;
+}
+
+.signout_btn{
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.signout_btn:hover{
+    color: white;
+}
+
+.dropdownmenu > li a{
+    color: black;
+    text-decoration: none;
+}
+.dropdownmenu li a:hover{
+    color: white;
+}
+.icon{
+    margin-right: 4px;
+}
+
+.dropdownmenu{
+    background-color: #FAFAFA;
+    border: 1px solid;
+    list-style-type: none;
+    text-align: left;
+    padding: 10px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+@media screen and (min-width: 801px){
+    .menubar{
+        display: none;
+    }
+
+    .navlist{
+        display: flex;
+        align-items: center;
+    }
+    .navlist > div a{
+        font-size: 20px;
+        margin-right: 10px;
+        text-decoration: none;
+        color: black;
+    }
+    .navlist > .link:hover{
+        background-color: #0078D4;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    .navlist > div a:hover{
+        color: white;
+    }
+    .line{
+        border-left: 2px solid ;
+        height: 20px;
+        margin-right: 10px;
+    }
+}

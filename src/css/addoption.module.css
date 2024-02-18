@@ -1,0 +1,97 @@
+.head {
+    display: flex;
+}
+.head > div{
+    margin: 5px 5px;
+}
+.head > div a{
+    text-decoration: none;
+}
+
+.content div .input{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.content div .input > input[type=text]{
+    border: none;
+    border-bottom: 2px solid ;
+    background-color: #E0EFFF;
+    width: 80%;
+}
+.content .input_datetime .input > input{
+    width: 20%;
+}
+.content div .input > select , .content div .input > textarea{
+    width: 80%;
+}
+
+.content > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: #E0EFFF;
+    border-radius: 15px;
+    height: 60px;
+}   
+
+.content div > .icon{
+    margin-right: 6px;
+}
+
+.content .button{
+    flex-direction: column;
+    background-color: #ffff;
+    margin-top: 24px;
+}
+
+.content .button > div{
+    background-color: #0078D4;
+    margin: 16px;
+    color: #ffff;
+    width: 255px;
+    height: 45px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.content .button > div:hover{
+    cursor: pointer;
+}
+
+@media screen and (min-width: 801px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .head{
+        width: 80%;
+    }
+
+    .content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 80%;
+    }
+    
+    .content .button{
+        flex-direction: row;
+    }
+
+    .content .button > div{
+        background-color: white;
+        color: #0078D4;
+        border: solid #0078D4;
+    }
+    .content .button > div:hover{
+        background-color: #0078D4;
+        color: #fff;
+    }
+}

@@ -1,0 +1,169 @@
+.container{
+    margin-top: 14px;
+}
+
+.head{
+    text-align: center;
+}
+.amount_money{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.filter_year{
+    display: flex;
+    background-color: #E0EFFF;
+    padding: 5px;
+    width: 100%; 
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.filter_year > div{
+    padding: 5px 9px;
+    margin: 0px 9px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.filter_year > div:hover{
+    background-color: #0078D4;
+    color: white;
+    cursor: pointer;
+}
+
+
+.summary{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #E0EFFF;
+}
+.summary .left{
+    margin-left: 10px;
+}
+.summary .right{
+    margin-right: 10px;
+}
+
+.mode{
+    margin-top: 5px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0078D4;
+}
+.mode > div, .mode div > a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.mode div > a:hover{
+    cursor: pointer;
+}
+.line{
+    border-left: 2px solid white;
+    height: 50px;
+}
+
+.icon{
+    margin-right: 10px;
+}
+
+
+.results{
+    margin: 0px 10px;
+    background-color: #E0EFFF;
+    border-radius: 15px;
+    margin-top: 5px;
+    padding-bottom: 10px;
+}
+
+.results .showresults{
+    margin: 0px 5px;
+}
+.results .showresults .head , .details > div{
+    margin: 0px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.results .showresults .head .left{
+    display: flex;
+    align-items: baseline;
+}
+.results .showresults .head .left .month{
+    font-size: 36px;
+}
+.results .showresults .head .left .day{
+    font-size: 14px;
+}
+.results .showresults .head .right{
+    display: flex;
+    align-items: center;
+}
+.results .showresults .head .right .salary{
+    font-size: 24px;
+}
+
+.resultnotes{
+    height: 260px;
+    overflow-y: scroll;
+}
+
+.details{
+    margin-bottom: 10px;
+    height: 100%;
+}
+.details > div{
+    border: 1px solid;
+}
+.details .dateline{
+    background-color: #0078D4;
+    border-radius: 5px 5px 0px 0px;
+}
+.details .dateline > p{
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+.details .dataline > p{
+    font-size: 20px;
+}
+
+@media screen and (min-width: 801px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content{
+        width: 60%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+    .content > div{
+        width: 100%;
+    }
+    .content .headcontent .summary{
+        border-radius: 15px;
+    }
+
+    .head .title{
+        font-size: 32px;
+    }
+    .head .amount_money{
+        font-size: 64px;
+    }
+
+    .filter_year{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .filter_year > div{
+        margin: 0px 6px;
+    }
+
+}
