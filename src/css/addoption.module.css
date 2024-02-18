@@ -71,14 +71,14 @@
     }
 
     .head{
-        width: 80%;
+        width: 50%;
     }
 
-    .content{
+    .content{   
         display: flex;
         justify-content: center;
         flex-direction: column;
-        width: 80%;
+        width: 50%;
     }
     
     .content .button{

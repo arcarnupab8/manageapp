@@ -131,6 +131,9 @@
         width: 60%;
     }
 
+    .filter{
+        width: 60%;
+    }
     .filter > div .input{
         height: 40px;
     }
@@ -139,7 +142,7 @@
     }
 
     .results{
-        width: 50%;
+        width: 40%;
     }
     .filter{
         display: grid;
