@@ -1,0 +1,26 @@
+.container{
+    flex-direction: column;
+}
+.container > div{
+    border: 1px solid;
+}
+.dateline{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 16px;
+    background-color: #0078D4;
+    border-radius: 5px 5px 0px 0px;
+}
+.dataline{
+    display: flex;
+    justify-content: space-between;
+}
+.dateline > p{
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+.dataline > p{
+    padding: 0px 16px;
+    font-size: 20px;
+}

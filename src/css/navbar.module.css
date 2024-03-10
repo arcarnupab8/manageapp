@@ -2,6 +2,7 @@ nav{
     display: flex;
     justify-content: space-between;
     height: 45px;
+    width: 100%;
     background-color: #E0EFFF;
     border: 1px solid;
 }
@@ -17,7 +18,7 @@ li:hover{
 .menubar{
     background-color: #E0EFFF;
     display: block;
-    width: 148px;
+    padding: 10px;
     text-align: center;
     position: relative;
 }
@@ -31,7 +32,7 @@ li:hover{
 }
 
 .signout_btn{
-    margin-right: 10px;
+    padding: 0px 20px;
     display: flex;
     align-items: center;
 }
@@ -43,10 +44,11 @@ li:hover{
     color: black;
     text-decoration: none;
 }
-.dropdownmenu li a:hover{
+.dropdownmenu li a:hover, .dropdownmenu li svg:hover{
     color: white;
+    fill: white;
 }
-.icon{
+svg{
     margin-right: 4px;
 }
 
@@ -69,10 +71,17 @@ li:hover{
         align-items: center;
     }
     .navlist > div a{
+        display: flex;
+        align-items: center;
         font-size: 20px;
-        margin-right: 10px;
+        font-family: Inter;
         text-decoration: none;
         color: black;
+    }
+    .navlist > .link{
+        padding: 0px 20px;
+        display: flex;
+        align-items: center;
     }
     .navlist > .link:hover{
         background-color: #0078D4;
@@ -80,12 +89,15 @@ li:hover{
         align-items: center;
         height: 100%;
     }
-    .navlist > div a:hover{
+    .navlink div svg:hover{
+        fill: white;
+    }
+    .navlist > div a:hover, .navlist > div svg:hover{
         color: white;
+        fill: white;
     }
     .line{
-        border-left: 2px solid ;
-        height: 20px;
-        margin-right: 10px;
+        border-left: 1px solid ;
+        height: 30px;
     }
 }
